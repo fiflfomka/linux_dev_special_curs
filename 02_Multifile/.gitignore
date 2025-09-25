@@ -1,0 +1,6 @@
+*.o
+test*
+prog
+prog-a
+prog-so
+lib*
