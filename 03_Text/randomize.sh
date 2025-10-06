@@ -53,5 +53,5 @@ done
 # print add info
 time_end=$(($(date +%s%N)/1000000))
 tput cup $n_line 0
-echo "- * - * - * - * - * - * - * - * - * -* - * - * - * - * - * - * - * -"
-echo draw time $((time_end - time_start))msec, drawed $n_chars characters, $n_spaces spaces skipped
+# echo "- * - * - * - * - * - * - * - * - * -* - * - * - * - * - * - * - * -"
+# echo draw time $((time_end - time_start))msec, drawed $n_chars characters, $n_spaces spaces skipped
