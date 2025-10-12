@@ -1,0 +1,10 @@
+set pagination off
+b range.c:61 if I.cur % 5 == 0
+
+command 1
+    printf "ANSWER %d %d %d %d\n", I.start, I.stop, I.step, I.cur
+    c
+end
+
+run 1 12 > /dev/null
+quit

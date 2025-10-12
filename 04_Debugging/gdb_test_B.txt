@@ -1,0 +1,17 @@
+set pagination off
+
+set var $NUM = 1
+b range.c:61 if 28 <= $NUM && $NUM <= 35
+b range.c:61
+
+command 1
+    printf "ANSWER %ld %ld %ld %ld\n", I.start, I.stop, I.step, I.cur
+end
+
+command 2
+    set $NUM = $NUM + 1
+    c
+end
+
+run -100 100 3 > /dev/null
+quit
